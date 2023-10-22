@@ -1,0 +1,564 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.header {
+    height: 165px;
+    background-image: url('../img/Group 90back.png');
+    background-size: cover;
+}
+.container {
+    max-width: 1590px;
+    padding: 0 25px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 159px;
+    height: 165px;
+    padding: 15px 20px 26px 26px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.logo__mobile {
+    display: none;
+}
+.burger {
+    display: none;
+}
+
+.logo__header{
+    color: #000;
+    font-family: 'Sports World', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: lowercase;
+    margin: 0;
+}
+.logo__header--casi {
+    font-size: 43px;
+}
+.logo__header--no {
+    font-size: 73px;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.navigation__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.navigation__over {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 31px;
+    height: 40px;
+}
+.navigation__item {
+    list-style: none;
+    height: fit-content;
+    position: relative;
+
+}
+.navigation__item--social {
+    position: relative;
+}
+.navigation__item::after {
+    content: '';
+    height: 0;
+    background-color: white;
+    width: 0px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    transition: width .3s;
+
+}
+.navigation__item:hover::after {
+    height: 2px;
+    width: 100%;
+
+}
+.navigation__item-link {
+    color: #FFF;
+    text-align: right;
+    text-decoration: none;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.navigation__item-social:first-child {
+    margin-left: 12px;
+}
+.navigation__item-social {
+    cursor: pointer;
+    margin-right: 6px;
+}
+.navigation__item-social:nth-child(3) {
+    margin-right: 26px;
+}
+.navigation__item-search {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    cursor: pointer;
+}
+.navigation__under {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    font-family: Sports World, sans-serif;
+    margin-top: 0px;
+    height: 50px;
+}
+.navigation__under-item {
+    position: relative;
+    list-style: none;
+}
+.navigation__under-item::after {
+    content: '';
+    height: 0;
+    background-color: #F9E100;
+    width: 0px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    transition: width .3s;
+
+}
+.navigation__under-item:hover::after {
+    height: 2px;
+    width: 100%;
+
+}
+.navigation__under-link {
+    color: #F9E100;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+.donate-button {
+    color: #FFF;
+    font-family: Sports World, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    background: #4F46F6;
+    padding: 10px 20px 18px 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.donate-button:hover {
+    color: #4F46F6;
+    background-color: transparent;
+    border: 1px solid #4F46F6;
+}
+.navigation__under-button:hover {
+    background: transparent;
+    border: 1px solid #4F46F6;
+    color: #4F46F6;
+}
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 96px;
+    margin-bottom: 93px;
+}
+.articles {
+}
+.swiper {
+    max-width: 856px;
+    position: relative;
+}
+
+.swiper-article__img {
+    margin-top: 46px;
+    margin-bottom: 42px;
+    width: 100%;
+}
+.pagination-swip {
+    position: absolute;
+    bottom: 204px !important;
+    z-index: 100;
+    text-align: end;
+    padding: 0px 12px !important;
+    box-sizing: border-box !important;
+}
+.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    opacity: 1 !important;
+    background-color: white !important;
+}
+.swiper-pagination-bullet-active {
+    background: #000 !important;
+}
+.swiper-article__header {
+    margin-top: 0;
+    color: #000;
+    font-family: Sports World;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.article-text__description {
+    color: #505050;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 26px;
+    max-width: 809px;
+    text-align: left;
+}
+.swiper__description {
+    margin-right: 26px;
+}
+.article {
+    border-top: 7px solid black;
+    margin-bottom: 26px;
+    padding: 0 26px;
+}
+
+.article__header {
+    color: #000;
+    font-family: Sports World, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    margin-top: 39px;
+}
+.article-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.article-text {
+    max-width: 485px;
+}
+.article-text__date {
+    color: #000;
+    font-family: Sports World, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+    display: block;
+}
+
+.article-body__img {
+    max-width: 335px;
+    width: 100%;
+    height: 230px;
+}
+.article-button {
+    background: #F9E100;
+    color: #000;
+    text-align: center;
+    font-family: Sports World, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 14px 23px 16px 23px;
+    border:  1px solid transparent;
+    float: right;
+    cursor: pointer;
+}
+
+.article-button:hover {
+    background: transparent;
+    color: #F9E100;
+    border:  1px solid #F9E100;
+}
+
+.sidebar {
+    margin-top: 46px;
+}
+.sidebar__link {
+    text-decoration: none;
+}
+.sidebar__header {
+    color: #000;
+    font-family: Sports World, sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-top: 0;
+    border-bottom: 7px solid #000;
+    margin-bottom: 37px;
+
+}
+.sidebar__text {
+    color: #505050;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 27px;
+}
+.sidebar__button {
+    margin-bottom: 22px;
+}
+.form {
+    background-image: url('../img/Group 92.png');
+    max-width: 590px;
+    width: 100%;
+    height: 590px;
+    padding: 40px 47px 35px 41px;
+    box-sizing: border-box;
+}
+.form__header {
+    color: #FFF;
+    font-family: Sports World, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+.form__text {
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 39px;
+    margin-top: 0;
+}
+.form__input {
+    width: 86%;
+    color: #8A8A8A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 29px 12px 29px;
+    border: none;
+    margin-bottom: 15px;
+    max-width: 500px;
+
+}
+
+::placeholder {
+    color: #8A8A8A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+.check-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: -4px;
+}
+.form__checkbox {
+    width: 17px;
+    height: 17px;
+}
+.form__label {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+.form__button {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+}
+.sidebar-article {
+    text-align: end;
+}
+.sidebar-article__header {
+    text-align: left;
+    margin-top: 44px;
+    font-size: 24px;
+    border-bottom: 3px solid black;
+    margin-bottom: 17px;
+}
+.sidebar-article__button {
+    margin-bottom: 42px;
+}
+.sidebar__follow {
+    margin-top: 124px;
+}
+
+.social-items {
+    text-align: left;
+}
+.social-items__item {
+    width: 62px;
+    height: 62px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.footer {
+    background-image: url('../img/Rectangle 30 (1).png');
+    background-size: cover;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.exit {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+.navigation__footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer__link {
+    font-size: 17px;
+}
+.footer-social-items {
+    margin-bottom: 24px;
+}
+.footer-social-items__item {
+    width: 32px;
+    height: 32px;
+    margin-left: 9px;
+}
+.alert {
+    width: 100%;
+    text-align: center;
+    background-color: #F9E100;
+}
+.alert__header {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 11px;
+    margin: 0;
+}
+.alert__text {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 11px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.alert__link {
+    text-decoration: none;
+    color: black;
+    
+}
+.arrivals-wrap {
+    text-align: center;
+    height: 142px;
+    background-color:#F9E100;
+}
+.arrivals__header {
+    color: #000;
+    text-align: center;
+    font-family: Sports World, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 52px 0 47px 0;
+    margin:  0 auto;
+
+}
+
+.arrivals-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 112px;
+    gap: 25px;
+}
+.arrivals__item {
+    text-align: center;
+}
+.arrivals__img {
+    border: 1px solid #C4C4C4;
+    background: rgba(196, 196, 196, 0.00);
+}
+.item-description {
+    max-width: 262px;
+}
+.item-description__header {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.item-description__price {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.alert__header--curse {
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+}
+.alert__header--ideas {
+    padding: 16px 0 18px 0;
+    margin: 0;
+    font-size: 14px;
+}
+.date-mobile {
+    display: none;
+}
