@@ -266,4 +266,7 @@
     .pagination-swip {
         bottom: 185px !important;
     }
+    .form__button {
+       font-size: 23px;
+    }
  }
