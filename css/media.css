@@ -119,6 +119,7 @@
         border-radius: 15px;
         width: 250px;
         align-items: center;
+        transition: right 0.5s;
     }
     .navigation__over {
         height: fit-content;
@@ -126,7 +127,6 @@
     }
     .mobile-close {
         right: -350px;
-        transition: right 0.5s;
     }
     .navigation__item--social {
         width: 100%;
